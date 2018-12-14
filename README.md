@@ -15,8 +15,7 @@ De quoi avez-vous besoin pour executer le script :
   Extrait le nom de fichier , titre et abstract.
 ####  branch V2 Script/ConvertPdf2Txt2.bat :
   Extrait le nom de fichier , titre et abstract et le met en format xml.
-####  branch V2 Script/ConvertPdf2Txt2.bat :
-  Extrait le nom de fichier , titre et abstract et le met en format xml.
+
 ### Execution
 
 Une série d'exemples pas à pas vous expliquant comment faire fonctionner un environnement de développement : 
@@ -29,7 +28,7 @@ Pour les fichier dont l'extention est .bat , exemple : ConvertPdf2Txt.bat
 ./ConvertPdf2Txt.bat
 ```
 
-Pour les fichier dont l'extention est .bat , exemple : ConvertPdf2Txt.bat
+Pour les fichier dont l'extention est .bat , exemple : ConvertPdf2Txt2.bat
 
 générer xml
 ```
