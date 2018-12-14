@@ -10,7 +10,10 @@ Ces instructions vous fourniront une copie du projet opérationnel sur votre ord
 De quoi avez-vous besoin pour executer le script :
   vous avez besoin de python, c++ et bash de linux.
 
-
+### Fonctionalités des Scripts
+####  src/ConvertPdf2Txt.bat :
+  Extrait le nom de fichier , titre et abstract.
+  
 
 ### Execution
 
@@ -18,25 +21,22 @@ Une série d'exemples pas à pas vous expliquant comment faire fonctionner un en
 
 Ouvrez un terminal Linux dans le dossier qui contient les Scripts
 
-Pour les fichier dont l'extention est .py , exemple : Abstract.py
-
-```
-python Abstract.py
-```
 
 Pour les fichier dont l'extention est .bat , exemple : ConvertPdf2Txt.bat
 
- 
 ```
 ./ConvertPdf2Txt.bat
+```
+
+Pour les fichier dont l'extention est .py 
 
 ```
-ConvertPdf2Txt.bat
-
+python script.py
+```
 
 ## Codé avec
 
-* [C++] - langage de programmation
+* [C++] - langage de programmation (Juste pour le test de rapidité d'execution)
 * [python] - langage de programmation
 * [bash] - langage de programmation shell 
 
