@@ -1,41 +1,33 @@
-ProjetScrum
-ProjetScrum consiste à creer un logiciel script en bash qui extrait des informations d'un ou plusieurs pdf et qui met les donnéees au format xml.
 
-Introduction
-Ces instructions vous fourniront une copie du projet opérationnel sur votre ordinateur local à des fins de développement et de test. Voir le déploiement pour des notes sur la manière de déployer le projet sur un système actif.
+## Option ajouté pour le Sprint n°2 : 
 
-conditions préalables
-De quoi avez-vous besoin pour executer le script : vous avez besoin de python, c++ et bash de linux.
+Pour ce sprint on a ajouté : 
 
-Fonctionalités des Scripts
-src/ConvertPdf2Txt.bat :
-Extrait le nom de fichier , titre et abstract.
+Récupération dans un fichier XML
+Récupération de la Référence
+Choix de l'extension : -t ou -x
 
-branch V2 Script/ConvertPdf2Txt2.bat :
-Extrait le nom de fichier , titre et abstract et le met en format xml.
+### Fichier ConvertPdf2Txt2.bat
+ 
+ Le fichier ConvertPdf2Txt2.bat va créer des fichiers .txt ou .xml selon si vous entrez -t ou -x.
+ 
+ Pour l'executer : 
+ 
+ ./ConvertPdf2Txt2.bat -t ou alors ./ConvertPdf2Txt2.bat -x
 
-Execution
-Une série d'exemples pas à pas vous expliquant comment faire fonctionner un environnement de développement :
+####  Référence : 
+  
+  Le code qui s'occupe de la récupération est directement intégré dans le programme ConvertPdf2Txt2.bat. Lors de l'éxécution, il va se charger d'extraire chaque Référence de chaque PDF.
+  
+#### Auteur : 
 
-Ouvrez un terminal Linux dans le dossier qui contient les Scripts
+Il faut terminer cette partie car étant plus compliqué, nous n'avons pas encore terminé la récupération de l'auteur. 
 
-Pour les fichier dont l'extention est .bat , exemple : ConvertPdf2Txt.bat
+## Auteurs
 
-./ConvertPdf2Txt.bat
-Pour les fichier dont l'extention est .bat , exemple : ConvertPdf2Txt2.bat
+"Okba Taddrth" <okba.taddrth@alumni.univ-avignon.fr>
+"Hamza ZAIM" <hamza.zaim@alumni.univ-avignon.fr>
+"Imad IGUICHI" <imad.iguichi@alumni.univ-avignon.fr>
+"Karim Redjimi" <karim.redjimi@alumni.univ-avignon.fr>
+"Samir AHRIOUI" <samir.ahrioui@alumni.univ-avignon.fr>
 
-générer xml
-
-./ConvertPdf2Txt.bat -x
-générer txt
-
-./ConvertPdf2Txt.bat -t
-Pour les fichier dont l'extention est .py
-
-python script.py
-Codé avec
-[C++] - langage de programmation (Juste pour le test de rapidité d'execution)
-[python] - langage de programmation
-[bash] - langage de programmation shell
-Auteurs
-"Okba Taddrth" okba.taddrth@alumni.univ-avignon.fr "Hamza ZAIM" hamza.zaim@alumni.univ-avignon.fr "Imad IGUICHI" imad.iguichi@alumni.univ-avignon.fr "Karim Redjimi" karim.redjimi@alumni.univ-avignon.fr "Samir AHRIOUI" samir.ahrioui@alumni.univ-avignon.fr
