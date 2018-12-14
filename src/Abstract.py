@@ -9,3 +9,6 @@ def afficher():
             x = re.findall(r'Abstract(.*?)Introduction',data,re.DOTALL)
             x="".join(x).replace('\n',' ')
             print(x);
+
+------------------------------------------------------------------------
+print(afficher())
