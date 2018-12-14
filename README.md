@@ -13,7 +13,9 @@ De quoi avez-vous besoin pour executer le script :
 ### Fonctionalités des Scripts
 ####  src/ConvertPdf2Txt.bat :
   Extrait le nom de fichier , titre et abstract.
-####  Script/ConvertPdf2Txt2.bat :
+####  branch V2 Script/ConvertPdf2Txt2.bat :
+  Extrait le nom de fichier , titre et abstract et le met en format xml.
+####  branch V2 Script/ConvertPdf2Txt2.bat :
   Extrait le nom de fichier , titre et abstract et le met en format xml.
 ### Execution
 
@@ -21,6 +23,11 @@ Une série d'exemples pas à pas vous expliquant comment faire fonctionner un en
 
 Ouvrez un terminal Linux dans le dossier qui contient les Scripts
 
+Pour les fichier dont l'extention est .bat , exemple : ConvertPdf2Txt.bat
+
+```
+./ConvertPdf2Txt.bat
+```
 
 Pour les fichier dont l'extention est .bat , exemple : ConvertPdf2Txt.bat
 
