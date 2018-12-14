@@ -4,7 +4,9 @@
 Pour ce sprint on a ajouté : 
 
 Récupération dans un fichier XML
+
 Récupération de la Référence
+
 Choix de l'extension : -t ou -x
 
 ### Fichier ConvertPdf2Txt2.bat
