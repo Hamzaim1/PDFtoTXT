@@ -49,50 +49,6 @@ then
 		cat "text2/$i.txt" | sed -n '/Abstract/,/Introduction/p' | sed -e  's:.*<Abstract>::' | sed -e 's:<Introduction>.*::'  >> "info/$i.txt"
 
 	done
-elif [ $1 = "-b" ]
-then
-		for i in *.pdf
-	do
-	#extraction du xml
-		echo $i
-
-		echo "<acticle>" >> "info2/$i.xml"
-		echo "<preamble>" $i "</preamble>" >> "info2/$i.xml"
-
-		pdf2txt -o "text2/$i.txt" "$i"
-
-		echo "<titre>" >> "info2/$i.xml"
-		sed -n '1,2p' "text2/$i.txt" >> "info2/$i.xml"
-		echo "</titre>" >> "info2/$i.xml"
-
-		echo "<abstract>" >> "info2/$i.xml"
-		cat "text2/$i.txt" | sed -n '/Abstract/,/Introduction/p' | sed -e  's:.*<Abstract>::' | sed -e 's:<Introduction>.*::'  >> "info2/$i.xml"
-		cat "text2/$i.txt" | sed -n '/ABSTRACT/,/INTRODUCTION/p' | sed -e  's:.*<ABSTRACT>::' | sed -e 's:<INTRODUCTION>.*::'  >> "info2/$i.xml"
-		
-		echo "</abstract>" >> "info2/$i.xml"
-		
-		echo "<bibliographie>" >> "info2/$i.xml"
-		cat "text2/$i.txt" | sed -n '/References/,/aaa/p' | sed -e  's:.*<References>::' | sed -e 's:<aaa>.*::'  >> "info2/$i.xml"
-		cat "text2/$i.txt" | sed -n '/REFERENCES/,/aaa/p' | sed -e  's:.*<References>::' | sed -e 's:<aaa>.*::'  >> "info2/$i.xml"
-		echo "</bibliographie>" >> "info1/$i.xml"
-
-		echo "</acticle>" >> "info2/$i.xml"
-		
-		
-		
-		#extraction de text
-		echo le nom de fichier est: $i >> "info1/$i.txt"
-		
-		echo Le titre de la recherche est: >> "info1/$i.txt"
-		sed -n '1,2p' "text1/$i.txt" >> "info1/$i.txt"
-
-		echo L'abstract de l'auteur est: >> "info1/$i.txt"
-		cat "text1/$i.txt" | sed -n '/Abstract/,/Introduction/p' | sed -e  's:.*<Abstract>::' | sed -e 's:<Introduction>.*::'  >> "info1/$i.txt"
-		cat "text1/$i.txt" | sed -n '/ABSTRACT/,/INTRODUCTION/p' | sed -e  's:.*<ABSTRACT>::' | sed -e 's:<INTRODUCTION>.*::'  >> "info1/$i.txt"
-		
-		cat "text1/$i.txt" | sed -n '/References/,/aaa/p' | sed -e  's:.*<References>::' | sed -e 's:<aaa>.*::'  >> "info1/$i.txt"
-		cat "text1/$i.txt" | sed -n '/REFERENCES/,/aaa/p' | sed -e  's:.*<References>::' | sed -e 's:<aaa>.*::'  >> "info1/$i.txt"
-	done
 else 	
         echo "Entrer une bonne option"
 fi
