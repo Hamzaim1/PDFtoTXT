@@ -31,10 +31,14 @@ Pour les fichier dont l'extention est .bat , exemple : ConvertPdf2Txt.bat
 
 Pour les fichier dont l'extention est .bat , exemple : ConvertPdf2Txt.bat
 
+générer xml
 ```
-./ConvertPdf2Txt.bat
+./ConvertPdf2Txt.bat -x
 ```
-
+générer txt
+```
+./ConvertPdf2Txt.bat -t
+```
 Pour les fichier dont l'extention est .py 
 
 ```
