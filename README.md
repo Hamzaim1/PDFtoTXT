@@ -13,15 +13,14 @@ De quoi avez-vous besoin pour executer le script :
 ### Fonctionalités des Scripts
 ####  src/ConvertPdf2Txt.bat :
   Extrait le nom de fichier , titre et abstract.
-####  Script/ConvertPdf2Txt2.bat :
+####  branch V2 Script/ConvertPdf2Txt2.bat :
   Extrait le nom de fichier , titre et abstract et le met en format xml.
-  
+
 ### Execution
 
 Une série d'exemples pas à pas vous expliquant comment faire fonctionner un environnement de développement : 
 
 Ouvrez un terminal Linux dans le dossier qui contient les Scripts
-
 
 Pour les fichier dont l'extention est .bat , exemple : ConvertPdf2Txt.bat
 
@@ -29,6 +28,16 @@ Pour les fichier dont l'extention est .bat , exemple : ConvertPdf2Txt.bat
 ./ConvertPdf2Txt.bat
 ```
 
+Pour les fichier dont l'extention est .bat , exemple : ConvertPdf2Txt2.bat
+
+générer xml
+```
+./ConvertPdf2Txt.bat -x
+```
+générer txt
+```
+./ConvertPdf2Txt.bat -t
+```
 Pour les fichier dont l'extention est .py 
 
 ```
@@ -48,8 +57,4 @@ python script.py
 "Imad IGUICHI" <imad.iguichi@alumni.univ-avignon.fr>
 "Karim Redjimi" <karim.redjimi@alumni.univ-avignon.fr>
 "Samir AHRIOUI" <samir.ahrioui@alumni.univ-avignon.fr>
-
-
-
-
 
