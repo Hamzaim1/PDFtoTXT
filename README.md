@@ -15,6 +15,7 @@ De quoi avez-vous besoin pour executer le script :
   Extrait le nom de fichier , titre et abstract.
 ####  Script/ConvertPdf2Txt2.bat :
   Extrait le nom de fichier , titre et abstract et le met en format xml.
+  
 ### Execution
 
 Une série d'exemples pas à pas vous expliquant comment faire fonctionner un environnement de développement : 
