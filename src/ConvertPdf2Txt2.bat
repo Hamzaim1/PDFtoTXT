@@ -50,6 +50,7 @@ then
 		cat "text1/$i.txt" | sed -n '/Abstract/,/Introduction/p' | sed -e  's:.*<Abstract>::' | sed -e 's:<Introduction>.*::'  >> "info1/$i.txt"
 		cat "text1/$i.txt" | sed -n '/ABSTRACT/,/INTRODUCTION/p' | sed -e  's:.*<ABSTRACT>::' | sed -e 's:<INTRODUCTION>.*::'  >> "info1/$i.txt"
 		
+		echo REFERENCES: >> "info1/$i.txt"
 		cat "text1/$i.txt" | sed -n '/References/,/aaa/p' | sed -e  's:.*<References>::' | sed -e 's:<aaa>.*::'  >> "info1/$i.txt"
 		cat "text1/$i.txt" | sed -n '/REFERENCES/,/aaa/p' | sed -e  's:.*<References>::' | sed -e 's:<aaa>.*::'  >> "info1/$i.txt"
 		
