@@ -10,11 +10,7 @@ Ces instructions vous fourniront une copie du projet opérationnel sur votre ord
 De quoi avez-vous besoin pour executer le script :
   vous avez besoin de python, c++ et bash de linux.
 
-### Fonctionalités des Scripts
-####  src/ConvertPdf2Txt.bat :
-  Extrait le nom de fichier , titre et abstract.
-####  branch V2 Script/ConvertPdf2Txt2.bat :
-  Extrait le nom de fichier , titre et abstract et le met en format xml.
+
 
 ### Execution
 
@@ -22,33 +18,40 @@ Une série d'exemples pas à pas vous expliquant comment faire fonctionner un en
 
 Ouvrez un terminal Linux dans le dossier qui contient les Scripts
 
+Pour les fichier dont l'extention est .py , exemple : Abstract.py
+
+```
+python Abstract.py
+```
+
 Pour les fichier dont l'extention est .bat , exemple : ConvertPdf2Txt.bat
 
+ 
 ```
 ./ConvertPdf2Txt.bat
-```
-
-Pour les fichier dont l'extention est .bat , exemple : ConvertPdf2Txt2.bat
-
-générer xml
-```
-./ConvertPdf2Txt.bat -x
-```
-générer txt
-```
-./ConvertPdf2Txt.bat -t
-```
-Pour les fichier dont l'extention est .py 
 
 ```
-python script.py
+ConvertPdf2Txt.bat
+
+Pour le fichier ConvertPdfToTextIntroUntilConcl.sh ,
+
+  2 options: -x pour extraire ai format xml ,-t pour extraire juste le text
+```
+./ConvertPdfToTextIntroUntilConcl.sh -x 
+
+```
+or
+
+```
+./ConvertPdfToTextIntroUntilConcl.sh -t 
+
 ```
 
 ## Codé avec
 
-* [C++] - langage de programmation (Juste pour le test de rapidité d'execution)
-* [python] - langage de programmation
-* [bash] - langage de programmation shell 
+* [C++] - pour test de rapidité uniquemment
+* [python] - langage de programmation première solution (obsolète)
+* [bash] - langage de programmation shell (version fonctionnelle)
 
 ## Auteurs
 
@@ -57,4 +60,8 @@ python script.py
 "Imad IGUICHI" <imad.iguichi@alumni.univ-avignon.fr>
 "Karim Redjimi" <karim.redjimi@alumni.univ-avignon.fr>
 "Samir AHRIOUI" <samir.ahrioui@alumni.univ-avignon.fr>
+
+
+
+
 
