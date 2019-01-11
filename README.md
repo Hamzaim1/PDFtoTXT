@@ -1,6 +1,6 @@
 # ProjetScrum
 
-ProjetScrum consiste à creer un logiciel script en python, c++ et bash qui extrait des informations d'un ou plusieurs 
+ProjetScrum consiste à creer un logiciel script en python et bash qui extrait des informations d'un ou plusieurs 
 pdf et qui met les donnéees au format xml.
 
 ## Introduction
@@ -8,7 +8,7 @@ Ces instructions vous fourniront une copie du projet opérationnel sur votre ord
 
 ### conditions préalables
 De quoi avez-vous besoin pour executer le script :
-  vous avez besoin de python, c++ et bash de linux.
+  vous avez besoin de python,pdf2text bash de linux.
 
 
 
