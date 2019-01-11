@@ -25,10 +25,6 @@ On a ajouté une autre option -b pour extraire les deux format d'un seul fichier
 ####  Référence : 
   
 Le code qui s'occupe de la récupération est directement intégré dans le programme ConvertPdf2Txt3.bat. Lors de l'éxécution, il va se charger d'extraire tout les informations pour un document que vous l'entrez en paramettre
-  
-#### Auteur : 
-
-Il faut terminer cette partie car étant plus compliqué, nous n'avons pas encore terminé la récupération de l'auteur. 
 
 ## Auteurs
 
